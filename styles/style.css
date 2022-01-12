@@ -1,0 +1,99 @@
+/*----------------------------------------------------
+
+Template Name   : 
+Description     :
+Author          :
+Version         :
+
+------------------------------------------------------
+    ==============
+     CSS INDEX
+    ==============
+    1.Theme default css
+    2.
+    3. player and blog area 
+
+-----------------------------------------------------*/
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/*---- Theme default css
+============================================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+/* input:focus,
+textarea:focus{
+    outline: 0;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+} */
+ul{
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+.container {
+    max-width: 870px;
+    padding: 0 30px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+.section-paddding {
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+/*---- player and blog area 
+============================================= */
+.section-title {
+    color: #562EFF;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+.player-area .top-player-section .all-player {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player-area .top-player-section .all-player .player {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.player-area .top-player-section .all-player .player img {
+    width: 56px;
+    height: 56px;
+}
+.player-area .top-player-section .all-player .player .player-name {
+    margin-left: 16px;
+    font-size: 18px;
+    color: #000000;
+    text-transform: capitalize;
+}
