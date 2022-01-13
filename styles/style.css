@@ -9,8 +9,8 @@ Version         :
     ==============
      CSS INDEX
     ==============
-    1.Theme default css
-    2.
+    1. Theme default css
+    2. header area
     3. player and blog area
     4. course area 
 
@@ -24,29 +24,32 @@ font-family: 'Roboto', sans-serif; */
 /*---- Theme default css
 ============================================= */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #F3F1FF;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
 a,
-a:hover{
+a:hover {
     text-decoration: none;
 }
+
 /* input:focus,
 textarea:focus{
     outline: 0;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 } */
-ul{
+ul {
     list-style: none;
 }
+
 h1,
 h2,
 h3,
@@ -62,14 +65,13 @@ h6 {
     max-width: 870px;
     padding: 0 30px;
     margin: 0 auto;
-    background-color: #ffffff;
 }
+
 .section-paddding {
     padding-top: 33px;
     padding-bottom: 33px;
 }
-/*---- player and blog area 
-============================================= */
+
 .section-title {
     color: #562EFF;
     text-transform: capitalize;
@@ -77,6 +79,56 @@ h6 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 40px;
+}
+/*---- header area
+============================================= */
+.header-area {
+    background-color: #562EFF;
+}
+.header-area nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header-area nav img {
+    width: 41px;
+    height: 51px;
+}
+.header-area nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-area nav ul li a{
+    display: inline-block;
+    color: #fff;
+}
+.header-area .loge-area li:nth-child(2n){
+    padding: 15px;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.header-area .menu-area li a {
+    padding: 5px 15px;
+    text-transform: capitalize;
+    border-bottom: 2px solid transparent;
+}
+.header-area .menu-area li a:hover {
+    border-bottom: 2px solid #fff;
+}
+.header-area .menu-area li img{
+    width: 51px;
+    height: 51px;
+    margin-left: 30px;
+}
+
+
+/*---- player and blog area 
+============================================= */
+
+.player-area .container {
+    background-color: #ffffff;
 }
 .player-area .top-player-section .all-player {
     display: grid;
@@ -89,21 +141,25 @@ h6 {
     flex-wrap: wrap;
     align-items: center;
 }
+
 .player-area .top-player-section .all-player .player img {
     width: 56px;
     height: 56px;
 }
+
 .player-area .top-player-section .all-player .player .player-name {
     margin-left: 16px;
     font-size: 18px;
     color: #000000;
     text-transform: capitalize;
 }
+
 .player-area hr {
     border: 1px solid #D1D1D1;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 /* blog area */
 .player-area .top-blog .all-article {
     display: grid;
@@ -111,22 +167,27 @@ h6 {
     grid-row-gap: 26px;
     grid-column-gap: 26px;
 }
+
 .player-area .top-blog .all-article .blog {
     display: flex;
     flex-wrap: nowrap;
 }
-.player-area .top-blog .all-article .blog .thumbnails img{
+
+.player-area .top-blog .all-article .blog .thumbnails img {
     max-width: 177px;
     max-height: 177px;
 }
+
 .player-area .top-blog .all-article .blog .blog-info {
     margin-left: 16px;
 }
-.player-area .top-blog .all-article .blog .blog-info .blog-title h3{
+
+.player-area .top-blog .all-article .blog .blog-info .blog-title h3 {
     font-size: 20px;
     line-height: 34px;
     color: #000;
 }
+
 .player-area .top-blog .all-article .blog .blog-info .blog-author {
     text-transform: capitalize;
     color: #9F9F9F;
@@ -134,33 +195,42 @@ h6 {
     font-size: 16px;
     line-height: 24px;
 }
-.player-area .top-blog .all-article .blog .blog-info .blog-author a{
+
+.player-area .top-blog .all-article .blog .blog-info .blog-author a {
     color: #562EFF;
     display: inline-block;
     margin: 6px 0;
 }
+
 /*---- course area
 ============================================= */
 .course-area {
     margin: 21px 0;
+}
+.course-area .container{
+    background-color: #ffffff;
 }
 .course-area .all-course {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 23px 23px;
 }
+
 .course-area .all-course .course {
     padding: 11px;
-    box-shadow:0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
 }
-.course-area .section-title{
+
+.course-area .section-title {
     margin-bottom: 11px;
 }
+
 .course-area .all-course .course .poster img {
     width: 224px;
     height: 104px;
 }
+
 .course-area .all-course .course .course-title {
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
@@ -170,6 +240,7 @@ h6 {
     margin-bottom: 7px;
     margin-top: 16px;
 }
+
 .course-area .all-course .course .course-author {
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
@@ -178,28 +249,127 @@ h6 {
     color: #ED6B4F;
     margin-bottom: 17px;
 }
+
 .course-area .all-course .course .course-info {
     display: flex;
     justify-content: space-between;
 }
-.course-area .all-course .course .course-info .ratting .filled{
+
+.course-area .all-course .course .course-info .ratting .filled {
     color: #FFC014;
     font-size: 12px;
 }
-.course-area .all-course .course .course-info .ratting .empty{
+
+.course-area .all-course .course .course-info .ratting .empty {
     color: #AEAEAE;
     font-size: 12px;
 }
-.course-area .all-course .course .course-info .ratting span{
+
+.course-area .all-course .course .course-info .ratting span {
     color: #A2A2A2;
     font-size: 14.6913px;
     line-height: 22px;
     margin-left: 10px;
 }
+
 .course-area .all-course .course .course-info .duration {
     background-color: #FFE4E8;
     color: #FF4A60;
     border-radius: 14px;
     padding: 1px 8px;
+}
+
+/* -----------------------------
+---------Media Queries----------- 
+--------------------------------*/
+@media only screen and (max-width: 768px) {
+
+    /* top area */
+    .container {
+        max-width: 768px;
+        padding: 0 30px;
+    }
+
+    .section-title {
+        margin-bottom: 26px;
+        text-align: center;
+    }
+
+    .player-area .top-player-section .all-player {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player-area .top-player-section .all-player .player {
+        justify-content: center;
+    }
+
+    .player-area .top-blog .all-article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* course area */
+    .course-area .all-course {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .course-area .all-course .course {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .course-area .all-course .course .poster {
+        text-align: center;
+    }
+
+    .course-area .all-course .course .course-details {
+        text-align: center;
+    }
+    .header-area nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    /* top area */
+    .container {
+        max-width: 576px;
+        padding: 0 20px;
+    }
     
+    .player-area .top-blog .all-article .blog .thumbnails img {
+        max-width: 145px;
+        max-height: 145px;
+    }
+    .player-area .top-player-section .all-player {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player-area .top-player-section .all-player .player {
+        flex-direction: column;
+    }
+ 
+    .player-area .top-player-section .all-player .player {
+        justify-content: center;
+    }
+    .player-area .top-player-section .all-player .player .player-name {
+        margin-left: 0;
+        
+    }
+    .player-area .top-blog .all-article .blog .blog-info .blog-title h3 {
+        font-size: 16px;
+    }
+   
+}
+
+@media only screen and (max-width: 576px) {
+
+    /* top area */
+    .container {
+        min-width: 350px;
+        padding: 0 20px;
+    }
+
 }
