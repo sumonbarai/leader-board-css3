@@ -144,3 +144,62 @@ h6 {
 .course-area {
     margin: 21px 0;
 }
+.course-area .all-course {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 23px 23px;
+}
+.course-area .all-course .course {
+    padding: 11px;
+    box-shadow:0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.course-area .section-title{
+    margin-bottom: 11px;
+}
+.course-area .all-course .course .poster img {
+    width: 224px;
+    height: 104px;
+}
+.course-area .all-course .course .course-title {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #1E1E1E;
+    margin-bottom: 7px;
+    margin-top: 16px;
+}
+.course-area .all-course .course .course-author {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ED6B4F;
+    margin-bottom: 17px;
+}
+.course-area .all-course .course .course-info {
+    display: flex;
+    justify-content: space-between;
+}
+.course-area .all-course .course .course-info .ratting .filled{
+    color: #FFC014;
+    font-size: 12px;
+}
+.course-area .all-course .course .course-info .ratting .empty{
+    color: #AEAEAE;
+    font-size: 12px;
+}
+.course-area .all-course .course .course-info .ratting span{
+    color: #A2A2A2;
+    font-size: 14.6913px;
+    line-height: 22px;
+    margin-left: 10px;
+}
+.course-area .all-course .course .course-info .duration {
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    border-radius: 14px;
+    padding: 1px 8px;
+    
+}
