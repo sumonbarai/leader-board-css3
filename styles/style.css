@@ -302,7 +302,9 @@ h6 {
     .player-area .top-player-section .all-player .player {
         justify-content: center;
     }
-
+    .player-area .top-blog .all-article .blog .blog-info .blog-title h3 { 
+        line-height: 24px;
+    }
     .player-area .top-blog .all-article {
         grid-template-columns: repeat(1, 1fr);
     }
